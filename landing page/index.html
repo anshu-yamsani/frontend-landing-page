@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makers of Milkshake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qr1kjhX+1uOHlePgrv5e9OUJPIik9KaWyaqu2LCt0l2e1Wp+9dTT7SgHgpXUjjDpfNN53JW8i+Jko9+cWxP0Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'sans-serif';
+        }
+
+        body {
+            background: rgba(0,147,221,255);
+            color: #fff;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,147,221,255);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        header .logo {
+            max-width: 80px;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .content .textBox {
+            max-width: 600px;
+        }
+
+        .content .textBox h2 {
+            font-size: 3em;
+            line-height: 1.2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .content .textBox h2 span {
+            color: #fff;
+            font-size: 0.7em;
+            font-weight: 900;
+        }
+
+        .content .textBox p {
+            font-size: 18px;
+            line-height: 1.6em;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .content .textBox a {
+            display: inline-block;
+            padding: 15px 25px;
+            background: #fff;
+            color: rgba(0,147,221,255);
+            border-radius: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .content .textBox a:hover {
+            background: rgba(0,147,221,200);
+            color: #fff;
+        }
+
+        .content .imgBox {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 5%;
+        }
+
+        .content .imgBox img {
+            max-width: 400px; /* Adjust the size as needed */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .content .textBox a i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="mom logo.png" class="logo" alt="Makers of Milkshake Logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Shake<br>It's <span>Makers of Milkshake</span></h2>
+                <p> "Dive into a world of indulgence with our creamy milkshakes where every sip is a delightful experience!"</p>
+                <a href="#"><i class="fas fa-info-circle"></i>Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="shake.png" class="mom" alt="Milkshake Image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
